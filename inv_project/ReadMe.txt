@@ -6,7 +6,7 @@ Dont forget to like and comment in webscript.info projects source code
 
 
 -----------------------------------
-Instruction
+STEPS
 ----------------------------------
 Download the project from webscript.info
 Extract the project folder in your server folder such as xampp/htdocs or wamp/www folder
