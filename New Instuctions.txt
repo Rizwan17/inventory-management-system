@@ -1,0 +1,20 @@
+[INSTRUCTION TO GET IT WORKING]
+
+ive have update to read me file to fix the same problem i had, hopefully it gets changed.
+the extra details are:
+
+Added Details By 'Ricky Downey' that you have to change, To Get Everything Working Correctly!!!!
+
+    Goto: inventory-management-system-master/database directory
+    1.1 Open the constants.php file and change the line below 1.2, to your url of your website, or look at example below for XAMPP 1.3
+    1.2 Change: define("DOMAIN","http://localhost/inv_project/public_html"); (this is an ""example"" of the domain name)
+    1.3 To XAMPP example: define("DOMAIN","http://localhost/inventory-management-system-master"); (this is an ""example"" of the domain name)
+    This means that the main inventory-management-system-master folder is in the htdocs folder, of the XAMPP Folder.
+    Goto: inventory-management-system-master/database directory again
+    2.1 uncomment these two lines (get rid of the forward slashes //)
+    $db = new Database();
+    $db->connect();
+    Goto: inventory-management-system-master/js directory
+    3.1 Open all 3 files, main.js, manage.js and order.js
+    3.2 Change this line at the top of each file: var DOMAIN = "http://localhost/inv_project/public_html"; (this is an ""example"" of the domain name)
+    3.3 to the same as what you put in deatils 1. above
