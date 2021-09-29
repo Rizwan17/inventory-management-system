@@ -39,6 +39,7 @@ if (isset($_SESSION["userid"])) {
 		<div class="card mx-auto" style="width: 20rem;">
 		  <img class="card-img-top mx-auto" style="width:60%;" src="./images/login.png" alt="Login Icon">
 		  <div class="card-body">
+			  <!-- this form cant be submit directly as it has onsubmit return false -->
 		    <form id="form_login" onsubmit="return false">
 			  <div class="form-group">
 			    <label for="exampleInputEmail1">Email address</label>
@@ -53,7 +54,6 @@ if (isset($_SESSION["userid"])) {
 			  <button type="submit" class="btn btn-primary"><i class="fa fa-lock">&nbsp;</i>Login</button>
 			  <span><a href="register.php">Register</a></span>
 			</form>
-		    
 		  </div>
 		  <div class="card-footer"><a href="#">Forget Password ?</a></div>
 		</div>
