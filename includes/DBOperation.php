@@ -12,7 +12,12 @@ class DBOperation
 	{
 		include_once("../database/db.php");
 		$db = new Database();
-		$this->con = $db->connect();
+		if($db->connectOracleDb()){
+			// code to connect with oracle db
+		}else{
+			$this->con = $db->connect();
+		}
+		
 	}
 
 	public function addCategory($parent,$cat){
