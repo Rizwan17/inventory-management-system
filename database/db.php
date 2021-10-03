@@ -15,6 +15,10 @@ class Database
 		}
 		return "DATABASE_CONNECTION_FAIL";
 	}
+
+	public function connectOracleDb(){
+		return null;
+	}
 }
 
 //$db = new Database();
